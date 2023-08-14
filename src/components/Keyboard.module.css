@@ -1,0 +1,37 @@
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 0.5rem;
+}
+
+.keyboard button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: none;
+  aspect-ratio: 1/1;
+  text-transform: uppercase;
+  background-color: #61dafb;
+  color: #282c34;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+  background-color: #282c34;
+  color: #61dafb;
+  border: none;
+}
+
+.btn.active {
+  background-color: #4f3cf2;
+  color: #61dafb;
+  border: none;
+}
+
+.btn.inactive {
+  opacity: 0.3;
+}

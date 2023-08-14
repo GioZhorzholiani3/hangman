@@ -1,0 +1,62 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+}
+
+.app > h1 {
+  font-family: "Courier New", Courier, monospace;
+  border-bottom: dashed 5px #61dafb;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(128, 238, 135) 0%,
+    rgba(0, 212, 255, 1) 100%
+  ); /* Replace these colors with your desired gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.wrapper {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: center;
+}
+.result {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.board {
+  margin: 2rem auto;
+  width: 50%;
+  align-self: stretch;
+}
+
+.resetBtn {
+  background-color: #61dafb;
+  color: #282c34;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px;
+  border: none;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+.resetBtn:hover {
+  background-color: #282c34;
+  color: #f5f5f5;
+  border: none;
+}
